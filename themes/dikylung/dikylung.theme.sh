@@ -8,8 +8,8 @@ GIT_PS1_SHOWDIRTYSTATE="enabled"
 OMB_PROMPT_VIRTUALENV_FORMAT=' [%s]'
 OMB_PROMPT_CONDAENV_FORMAT=' [%s]'
 
-OMB_THEME_EDSONARIOS_STATUS_BAD="${_omb_prompt_bold_brown}\h ❯❯${_omb_prompt_normal} "
-OMB_THEME_EDSONARIOS_STATUS_OK="${_omb_prompt_bold_green}\h ❯❯${_omb_prompt_normal} "
+OMB_THEME_EDSONARIOS_STATUS_BAD="${_omb_prompt_bold_brown}\u@\h ❯${_omb_prompt_normal} "
+OMB_THEME_EDSONARIOS_STATUS_OK="${_omb_prompt_bold_green}\u@\h ❯${_omb_prompt_normal} "
 
 function _omb_theme_PROMPT_COMMAND {
   if (($? == 0)); then
