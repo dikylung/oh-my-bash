@@ -21,9 +21,9 @@ function _omb_theme_PROMPT_COMMAND {
   # If the current directory is the same as HOME, will just show "~/".  If not,
   # show the complete route unlike \w.
   if [[ $PWD == "$HOME" ]]; then
-    local directory='\W/'
+    local directory='\w'
   else
-    local directory="$PWD/"
+    local directory='\w'
   fi
 
   local python_venv
